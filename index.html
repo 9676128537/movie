@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Review Site</h1>
+    </header>
+    <main>
+        <section id="review-form">
+            <h2>Submit Your Review</h2>
+            <form id="movie-review-form">
+                <label for="movie-title">Movie Title:</label>
+                <input type="text" id="movie-title" name="movie-title" required>
+
+                <label for="movie-rating">Rating (1-5):</label>
+                <input type="number" id="movie-rating" name="movie-rating" min="1" max="5" required>
+
+                <label for="movie-review">Review:</label>
+                <textarea id="movie-review" name="movie-review" rows="4" required></textarea>
+
+                <button type="submit">Submit Review</button>
+            </form>
+            <div id="form-feedback"></div>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <ul id="reviews-list">
+                <!-- Reviews will be appended here -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
